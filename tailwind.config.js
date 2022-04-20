@@ -2,12 +2,15 @@ const colors = require("tailwindcss/colors")
 const plugin = require("tailwindcss/plugin")
 
 module.exports = {
+  plugins: [
+    require('flowbite/plugin')
+  ],
   purge: {
     content: [
       "./src/**/*.{js,jsx,ts,tsx}",
+      "./node_modules/flowbite/**/*.js"
     ],
   },
-  // mode: 'jit',
   theme: {
     extend: {
       fontFamily: {
