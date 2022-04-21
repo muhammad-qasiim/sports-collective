@@ -11,7 +11,7 @@ const Header = () => {
                 <section className="flex flex-col xl:flex-row items-center gap-6">
                     <div className="w-full mb-32 xl:mb-10">
                         <h3 className="text-50 font-semibold mb-10 text-black leading-58">Discover, collect, and sell extraordinary NFTs</h3>
-                        <p className="mt-4 text-34 text-gray-700 leading-48 pr-0 lg:pr-112">OpenSea is the world's first and largest NFT marketplace</p>
+                        <p className="mt-4 text-34 text-gray-700 leading-48 pr-0 lg:pr-112">beglobal is the world's first and largest NFT marketplace</p>
                         <div className="flex items-center gap-4 mt-38">
                             <Link to="/explore">  <button className="bg-red-500 text-white px-32 py-10 rounded-5 transition-all hover:bg-red-600 relative top-0 hover:top-px" >Explore</button> </Link>
                             <Link to="/create">  <button className="border border-red-600 rounded-5 text-red-500 px-32 py-10 transition-all relative top-0 hover:top-px">
