@@ -16,7 +16,7 @@ const Navbar = () => {
 
         <nav className="shadow-xl py-24">
             <div className="container flex flex-wrap justify-between items-center mx-auto px-24 lg:px-99">
-                <Link to="/"> <span className="self-center text-xl font-semibold whitespace-nowrap">be.global</span> </Link>
+                <Link to="/"> <span className="self-center text-xl font-semibold whitespace-nowrap">beglobal</span> </Link>
 
                 <div className="flex xl:order-1">
                     <div className="hidden relative mr-3 xl:mr-0 xl:block">
