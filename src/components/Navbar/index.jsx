@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-scroll'
+import { Link } from 'react-router-dom';
 import Input from '../Common/Input';
 import { IoClose } from "react-icons/io5";
 import { BiSearch } from "react-icons/bi";
@@ -9,13 +9,13 @@ import { BiWallet } from "react-icons/bi";
 
 const Navbar = () => {
 
-    const Navigation = [{ placeholder: 'Explore', active: true, path: '/' }, { placeholder: 'Stats', path: '/' }, { placeholder: 'Resources', path: '/' }, { placeholder: 'Create', path: '/' }]
+    const Navigation = [{ placeholder: 'Explore', active: true }, { placeholder: 'Stats' }, { placeholder: 'Resources', path: '/' }, { placeholder: 'Create', path: '/create' }]
 
     return (
 
         <nav className="shadow-xl py-24">
             <div className="container flex flex-wrap justify-between items-center mx-auto px-24 lg:px-99">
-                <span className="self-center text-xl font-semibold whitespace-nowrap">be.global</span>
+                <Link to="/"> <span className="self-center text-xl font-semibold whitespace-nowrap">be.global</span> </Link>
 
                 <div className="flex xl:order-1">
                     <div className="hidden relative mr-3 xl:mr-0 xl:block">
@@ -31,7 +31,9 @@ const Navbar = () => {
                         {
                             Navigation?.map(item => (
                                 <li>
-                                    <span className={`relative text-xl border-b-2 border-transparent cursor-pointer transition-all text-gray-500 hover:text-gray-800 ${item?.active && 'active text-gray-800 after:-bottom-8'}`}>{item?.placeholder}</span>
+                                    <span className={`relative text-xl border-b-2 border-transparent cursor-pointer transition-all text-gray-500 hover:text-gray-800 ${item?.active && 'active text-gray-800 after:-bottom-8'}`}>
+                                        {item?.placeholder}
+                                    </span>
                                 </li>
                             ))
                         }
