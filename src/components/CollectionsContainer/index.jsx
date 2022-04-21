@@ -1,7 +1,9 @@
+import { useState } from 'react'
 import Collection from './Collection'
 
 const CollectionsContainer = () => {
 
+    const [activeLink, setActiveLink] = useState('Trending')
     const Collections = ["Trending", "Top", "Art", "Collectibles", "Domain Names", "Music", "Photography", "Sports", "Trading Cards", "Utility", "Virtual Worlds"]
 
     return (
@@ -13,8 +15,8 @@ const CollectionsContainer = () => {
                 <ul className="flex items-center 2xl:justify-center gap-8 mb-4 whitespace-nowrap">
                     {
                         Collections?.map(collection => (
-                            <li>
-                                <span className={`relative text-lg border-b-2 border-transparent cursor-pointer transition-all text-gray-500 hover:text-gray-800 ${collection === 'Trending' && 'active after:-bottom-2 text-gray-800'}`}>{collection}</span>
+                            <li onClick={() => setActiveLink(collection)}>
+                                <span className={`relative text-lg border-b-2 border-transparent cursor-pointer transition-all text-gray-500 hover:text-gray-800 ${activeLink === collection && 'active after:-bottom-2 text-gray-800'}`}>{collection}</span>
                             </li>
                         ))
                     }

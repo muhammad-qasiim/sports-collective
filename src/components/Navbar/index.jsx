@@ -9,7 +9,8 @@ import { BiWallet } from "react-icons/bi";
 
 const Navbar = () => {
 
-    const Navigation = [{ placeholder: 'Explore', active: true }, { placeholder: 'Stats' }, { placeholder: 'Resources', path: '/' }, { placeholder: 'Create', path: '/create' }]
+    const [activeLink, setActiveLink] = useState('Trending')
+    const Navigation = [{ placeholder: 'Explore', path: '/explore' }, { placeholder: 'Stats', path: '/' }, { placeholder: 'Resources', path: '/' }, { placeholder: 'Create', path: '/create' }]
 
     return (
 
@@ -30,10 +31,10 @@ const Navbar = () => {
                     <ul className="flex flex-col items-center mt-4 xl:flex-row xl:space-x-8 xl:mt-0 xl:text-sm xl:font-medium">
                         {
                             Navigation?.map(item => (
-                                <li>
-                                    <span className={`relative text-xl border-b-2 border-transparent cursor-pointer transition-all text-gray-500 hover:text-gray-800 ${item?.active && 'active text-gray-800 after:-bottom-8'}`}>
+                                <li onClick={() => setActiveLink(item?.placeholder)}>
+                                    <Link to={item?.path}>       <span className={`relative text-xl border-b-2 border-transparent cursor-pointer transition-all text-gray-500 hover:text-gray-800 ${activeLink === item?.placeholder && 'active text-gray-800 after:-bottom-8'}`}>
                                         {item?.placeholder}
-                                    </span>
+                                    </span> </Link>
                                 </li>
                             ))
                         }

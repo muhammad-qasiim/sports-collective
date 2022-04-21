@@ -36,3 +36,26 @@ input:focus-visible{
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
+
+.wallet-item:hover{
+  transition: all 0.2s ease 0s;
+  box-shadow: rgb(4 17 29 / 25%) 0px 0px 8px 0px;
+  background-color: rgb(251, 253, 255);
+}
+
+.showcase{
+  background-image: url(/public/assets/bg.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-color: rgb(255, 255, 255);
+  background-position: center center;
+  opacity: 0.3;
+  filter: blur(8px);
+  -webkit-mask: linear-gradient(rgb(255, 255, 255), transparent);
+}
+  
+  .showcase-header:hover{
+    transition: box-shadow 0.3s ease-in 0s;
+    box-shadow: rgb(4 17 29 / 25%) 0px 0px 50px 0px;
+  }
