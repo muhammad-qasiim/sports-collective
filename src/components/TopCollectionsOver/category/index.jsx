@@ -7,9 +7,9 @@ const Collection = ({ category }) => {
 
         Categories?.map(c => (
             <div class="px-22 w-full md:w-1/2 lg:my-12 lg:px-14 lg:w-1/3">
-                <article class="overflow-hidden p-22 border-b flex gap-2 items-center rounded-lg transition-all hover:shadow-md cursor-pointer">
+                <article class="overflow-hidden p-22 border-b flex gap-2 items-center rounded-lg transition-all custom-shadow cursor-pointer">
                     <section className="flex items-center gap-2">
-                        <h5 className="font-bold">6</h5>
+                        <h5 className="font-bold">06</h5>
                         <div class=" h-64 w-64 rounded-full  border-4 border-gray-400">
                             <img alt="Placeholder" class="h-full rounded-full w-full overflow-hidden" src="https://picsum.photos/600/400/?random" /></div>
                     </section>

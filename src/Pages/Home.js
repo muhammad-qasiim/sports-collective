@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import Header from "../components/Header";
 import BrowseByCategory from "../components/BrowseByCategory";
 import TopCollectionsOver from "../components/TopCollectionsOver";
+import CreateAndSellNFTs from "../components/CreateAndSellNFTs";
 import ResourcesForGettingStarted from "../components/ResourcesForGettingStarted";
 
 function Home() {
@@ -11,6 +12,8 @@ function Home() {
 
       <BrowseByCategory />
 
+      <CreateAndSellNFTs />
+      
       <TopCollectionsOver />
 
       <ResourcesForGettingStarted />
