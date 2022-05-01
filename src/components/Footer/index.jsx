@@ -59,7 +59,7 @@ const Footer = () => {
                 </div>
             </section>
 
-            <section className="container mx-auto px-24 lg:px-99 py-16 md:flex md:items-center text-center md:justify-between">
+            <section className="container mx-auto px-24 lg:px-99 pt-16 pb-42 md:flex md:items-center text-center md:justify-between">
                 <span className="text-sm text-gray-400 sm:text-center ml-8">© 2022 META Factory™ All Rights Reserved.</span>
                 <div className="flex mt-4 space-x-6 justify-center md:mt-0">
                     <span className="cursor-pointer text-gray-400 text-14 hover:underline transition-all">Privacy Policy</span>
