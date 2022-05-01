@@ -1,10 +1,10 @@
 
-import CollectionsContainer from "../components/CollectionsContainer";
+import ExploreCollections from "../components/ExploreCollections";
 
 function Explore() {
   return (
     <>
-      <CollectionsContainer />
+      <ExploreCollections />
     </>
   );
 }
