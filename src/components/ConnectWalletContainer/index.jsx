@@ -1,7 +1,7 @@
 
 const ConnectWalletContainer = () => {
 
-    const Collections = ["MetaMask", "Coinbase Wallet", "WalletConnect", "Phantom", "Authereum","MetaMask", "Coinbase Wallet", "WalletConnect", "Phantom", "Authereum"]
+    const Collections = ["MetaMask", "Coinbase Wallet", "WalletConnect", "Phantom", "Venly", "Kaikas", "Authereum", "Torus", "Phantom", "Dapper"]
 
     return (
         <section className="container mx-auto px-24 lg:px-99 my-99">
@@ -16,11 +16,22 @@ const ConnectWalletContainer = () => {
                 <ul className="rounded-8 card-shadow bg-gray-50 w-full md:w-384 mx-auto my-60 border">
                     {
                         Collections?.map(collection => (
-                            <li>
-                                <div className={`wallet-item flex items-center gap-4 font-normal text-lg cursor-pointer transition-all px-26 border-b py-10`}>
+                            <li className="wallet-item flex items-center justify-between px-26 py-10 border-b">
+                                <div className={` flex justify-between text-gray-700 items-center gap-4 font-normal text-lg cursor-pointer transition-all`}>
                                     <img className="w-24" src="/assets/metamask.webp" alt="" />
                                     {collection}
                                 </div>
+                                {collection === 'MetaMask' && (
+                                    <div className="bg-red-500 text-white px-16 py-3 rounded-8">Popular</div>
+                                )}
+
+                                {collection === 'Phantom' && (
+                                    <div className="bg-gray-100 text-gray-700 px-16 py-3 rounded-8">Solana
+                                    </div>
+                                )}
+                                {collection === 'Authereum' && (
+                             <div className="bg-gray-100 text-gray-700 px-16 py-3 rounded-8">Solana
+                             </div>                                )}
                             </li>
                         ))
                     }
