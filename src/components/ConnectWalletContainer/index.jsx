@@ -22,16 +22,16 @@ const ConnectWalletContainer = () => {
                                     {collection}
                                 </div>
                                 {collection === 'MetaMask' && (
-                                    <div className="bg-red-500 text-white px-16 py-3 rounded-8">Popular</div>
+                                    <div className="bg-red-500 text-white px-16 py-3 rounded-20">Popular</div>
                                 )}
 
                                 {collection === 'Phantom' && (
-                                    <div className="bg-gray-100 text-gray-700 px-16 py-3 rounded-8">Solana
+                                    <div className="bg-gray-100 text-gray-700 px-16 py-3 rounded-20">Solana
                                     </div>
                                 )}
                                 {collection === 'Authereum' && (
-                             <div className="bg-gray-100 text-gray-700 px-16 py-3 rounded-8">Solana
-                             </div>                                )}
+                                    <div className="bg-gray-100 text-gray-700 px-16 py-3 rounded-20">Solana
+                                    </div>)}
                             </li>
                         ))
                     }
