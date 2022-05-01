@@ -8,11 +8,11 @@ const ConnectWalletContainer = () => {
         <>
             <section className='mt-99 relative'>
                 <img className='absolute -top-10 left-0 hidden lg:block' src="/assets/left-graphic.png" alt="" />
-                <h3 className="text-40 font-semibold text-center mb-99">Transfer</h3>
+                <h3 className="text-40 font-semibold text-center mb-44">Transfer</h3>
                 <img className='absolute -top-10 right-0 hidden lg:block' src="/assets/right-graphic.png" alt="" />
             </section>
 
-            <section className="container mx-auto px-24 lg:px-99 my-99">
+            <section className="container mx-auto px-24 lg:px-99 mb-99">
 
                 <div className="mb-44 flex justify-center rounded-20">
                     <img className="rounded-20 border-8" src="https://picsum.photos/400/300/?random" alt="" />

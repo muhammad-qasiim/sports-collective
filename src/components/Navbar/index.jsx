@@ -14,7 +14,7 @@ const Navbar = () => {
 
     return (
 
-        <nav className="shadow-xl py-24 sticky top-0 bg-white custom-shadow" style={{zIndex: '999'}}>
+        <nav className="shadow-xl py-16 sticky top-0 bg-white custom-shadow" style={{ zIndex: '999' }}>
             <div className="flex flex-wrap justify-between items-center mx-auto px-99">
                 <Link to="/"> <span className="self-center text-xl font-semibold whitespace-nowrap flex items-center gap-2">
                     <img className="w-7" src="/assets/beglobal.svg" alt="" />
@@ -34,7 +34,7 @@ const Navbar = () => {
                         {
                             Navigation?.map(item => (
                                 <li onClick={() => setActiveLink(item?.placeholder)}>
-                                    <Link to={item?.path}>       <span className={`relative text-xl border-b-2 border-transparent cursor-pointer transition-all text-gray-500 hover:text-gray-800 ${activeLink === item?.placeholder && 'active text-gray-800 after:-bottom-8'}`}>
+                                    <Link to={item?.path}>       <span className={`relative text-xl border-b-2 border-transparent cursor-pointer transition-all text-gray-500 hover:text-gray-800 ${activeLink === item?.placeholder && 'active text-gray-800 after:-bottom-6'}`}>
                                         {item?.placeholder}
                                     </span> </Link>
                                 </li>

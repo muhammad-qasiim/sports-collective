@@ -1,7 +1,7 @@
 const Input = ({ label, type, className, placeholder, startAdorment }) => {
     return (
         <section>
-            <label className="text-gray-600 font-medium" htmlFor="#">{label}</label> <br />
+            {label && (<> <label className="text-gray-600 font-medium" htmlFor="#">{label}</label> <br /> </>)}
             <section className="relative">
                 <span className="absolute top-2/4 left-2 -translate-y-2/4 text-gray-500">
                     {startAdorment}

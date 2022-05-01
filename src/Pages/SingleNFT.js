@@ -1,9 +1,15 @@
 
+import { useState } from 'react'
 import { GoVerified } from "react-icons/go";
-import Collection from '../components/ExploreCollections/Collection'
+import { BsCollection } from "react-icons/bs";
+import { GiBackwardTime } from "react-icons/gi";
+import { AiOutlineTag, AiOutlineEyeInvisible, AiOutlineHeart, AiOutlineFormatPainter, AiOutlineUnorderedList } from "react-icons/ai";
+
+import SingleNFTCollection from '../components/SingleNFTCollection'
 
 function Create() {
-  const Collections = ["Trending", "Top", "Art", "Collectibles", "Domain Names", "Music", "Photography", "Sports", "Trading Cards", "Utility", "Virtual Worlds"]
+  const [activeLink, setActiveLink] = useState('Collected')
+  const Collections = ["Collected", "Created", "Favourited", "Hidden", "Activity", "Offers", "Lisitngs",]
 
   return (
     <>
@@ -16,7 +22,7 @@ function Create() {
       <section className="container mx-auto px-24 lg:px-99 my-72 text-center">
         <h3 className="text-28 font-semibold text-center mb-18 flex items-center gap-2 justify-center">Otherdeed for Otherside <GoVerified className="text-blue-500 text-22 mt-4" /> </h3>
 
-        <h5 className="flex items-center gap-2 justify-center mb-14">Created by <span className="text-blue-500 cursor-pointer transition-all hover:text-blue-700">OthersideMeta</span> <GoVerified className="text-blue-500 text-14" /> </h5>
+        <h5 className="flex items-center gap-2 justify-center mb-14">Created by <span className="text-red-500 cursor-pointer transition-all hover:text-red-700">OthersideMeta</span> <GoVerified className="text-blue-500 text-14" /> </h5>
 
 
         <section className="flex justify-center items-center my-22">
@@ -38,14 +44,36 @@ function Create() {
           </div>
         </section>
 
-        <p className="text-gray-600 text-18 w-full md:w-2/4 mx-auto">Otherdeed is the key to claiming land in Otherside. Each have a unique blend of environment and sediment — some with resources, some home to powerful artifacts. And on a very few, a Koda roams.</p>
+        <p className="text-18 w-full md:w-2/4 mx-auto font-light" style={{color: '#707a83'}}>Otherdeed is the key to claiming land in Otherside. Each have a unique blend of environment and sediment — some with resources, some home to powerful artifacts. And on a very few, a Koda roams.</p>
       </section>
+
+      <div className="text-sm font-medium text-center text-gray-500 border-b border-gray-200 mb-32 mx-8 overflow-x-scroll">
+                    <ul className="flex items-center 2xl:justify-center gap-8 mb-4 whitespace-nowrap">
+                        {
+                            Collections?.map(collection => (
+                                <li onClick={() => setActiveLink(collection)}>
+                                    <span className={`flex items-center gap-2 relative text-lg border-b-2 border-transparent cursor-pointer transition-all text-gray-500 hover:text-gray-800 ${activeLink === collection && 'active after:-bottom-2 text-gray-800'}`}>
+                                    {collection === 'Collected' && <BsCollection size="16" />}
+                                    {collection === 'Created' && <AiOutlineFormatPainter size="20" />}
+                                    {collection === 'Favourited' && <AiOutlineHeart size="18" />}
+                                    {collection === 'Hidden' && <AiOutlineEyeInvisible size="18" />}
+                                    {collection === 'Activity' && <GiBackwardTime size="18" />}
+                                    {collection === 'Offers' && <AiOutlineUnorderedList size="16" />}
+                                    {collection === 'Lisitngs' && <AiOutlineTag size="18" />}
+                                    {collection}
+                                    <span className='text-14 mt-1'>0</span>
+                                    </span>
+                                </li>
+                            ))
+                        }
+                    </ul>
+                </div>
 
       <section className="container mx-auto px-24 lg:px-99 my-72 text-center">
       <div className="flex flex-wrap -mx-1 lg:-mx-4">
                 {
                     Collections?.map(collection => (
-                        <Collection />
+                        <SingleNFTCollection />
                     ))
                 }
             </div>
