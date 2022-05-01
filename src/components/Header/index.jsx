@@ -22,27 +22,27 @@ const Header = () => {
                         <p className="font-medium flex items-center gap-2 cursor-pointer text-red-600 mt-24 transition-all hover:text-red-700 z-50 relative"> <AiFillPlayCircle size="28" /> Learn more about beglobal</p>
                     </div>
                     <div className="w-full md:w-3/5 xl:w-full">
-                    <Link to="/single_nft">
-                        <div class="relative my-18 px-14 w-full lg:my-12 lg:px-14">
-                            <article class="showcase-header cursor-pointer overflow-hidden rounded-lg shadow-lg">
-                                <section className="relative">
-                                    <img alt="Placeholder" class="block h-auto w-full" src="https://picsum.photos/600/300/?random" />
-                                </section>
-                                <footer className='flex items-center justify-between py-22 px-12'>
-                                    <section className='flex items-center gap-4'>
-                                        <div className=" h-64 w-64 rounded-full  border-4 border-gray-400">
-                                            <img alt="Placeholder" class="h-full rounded-full w-full overflow-hidden" src="https://picsum.photos/600/400/?random" />
-                                        </div>
-                                        <div>
-                                            <h6 className="mt-4 text-md leading-relaxed text-gray-800 cursor-pointer font-bold"> Good Monkey  </h6>
-                                            <p className="text-14 leading-relaxed text-red-600 font-medium pl-4 mb-6 cursor-pointer transition-all hover:underline"> moondust</p>
-                                        </div>
+                        <Link to="/single_nft">
+                            <div className="relative my-18 px-14 w-full lg:my-12 lg:px-14">
+                                <article className="showcase-header cursor-pointer overflow-hidden rounded-lg shadow-lg">
+                                    <section className="relative">
+                                        <img alt="Placeholder" className="block h-auto w-full" src="https://picsum.photos/600/300/?random" />
                                     </section>
-                                    <BsInfoCircle className='mr-4 text-22 cursor-pointer' />
-                                </footer>
-                            </article>
-                        </div>
-                    </Link>
+                                    <footer className='flex items-center justify-between py-22 px-12'>
+                                        <section className='flex items-center gap-4'>
+                                            <div className=" h-64 w-64 rounded-full  border-4 border-gray-400">
+                                                <img alt="Placeholder" className="h-full rounded-full w-full overflow-hidden" src="https://openseauserdata.com/files/otherside_launch_creator_image_rc1.jpeg" />
+                                            </div>
+                                            <div>
+                                                <h6 className="mt-4 text-md leading-relaxed text-gray-800 cursor-pointer font-bold"> Good Monkey  </h6>
+                                                <p className="text-14 leading-relaxed text-red-600 font-medium pl-4 mb-6 cursor-pointer transition-all hover:underline"> moondust</p>
+                                            </div>
+                                        </section>
+                                        <BsInfoCircle className='mr-4 text-22 cursor-pointer' />
+                                    </footer>
+                                </article>
+                            </div>
+                        </Link>
                     </div>
                 </section>
             </header>

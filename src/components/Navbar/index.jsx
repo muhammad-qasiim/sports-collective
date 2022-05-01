@@ -14,15 +14,15 @@ const Navbar = () => {
 
     return (
 
-        <nav className="shadow-xl py-24">
-            <div className="container flex flex-wrap justify-between items-center mx-auto px-24 lg:px-99">
+        <nav className="shadow-xl py-24 sticky top-0 bg-white custom-shadow" style={{zIndex: '999'}}>
+            <div className="flex flex-wrap justify-between items-center mx-auto px-99">
                 <Link to="/"> <span className="self-center text-xl font-semibold whitespace-nowrap flex items-center gap-2">
                     <img className="w-7" src="/assets/beglobal.svg" alt="" />
                     beglobal</span> </Link>
 
                 <div className="flex xl:order-1">
                     <div className="hidden relative mr-3 xl:mr-0 xl:block">
-                        <Input type="text" startAdorment={<BiSearch className='mt-2' />} />
+                        <Input type="text" placeholder="Search items, collections, and accounts" startAdorment={<BiSearch className='mt-2' />} />
                     </div>
                     <button type="button" className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-xl xl:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 " aria-controls="mobile-menu-3" aria-expanded="false">
                         <GiHamburgerMenu />
@@ -42,12 +42,12 @@ const Navbar = () => {
                         }
                         <li>
                             <span className='relative text-3xl border-b-2 border-transparent cursor-pointer transition-all text-gray-500 hover:text-gray-800'>
-                                <BiWallet />
+                                <CgProfile />
                             </span>
                         </li>
                         <li>
                             <span className='relative text-3xl border-b-2 border-transparent cursor-pointer transition-all text-gray-500 hover:text-gray-800'>
-                                <CgProfile />
+                                <BiWallet />
                             </span>
                         </li>
                     </ul>

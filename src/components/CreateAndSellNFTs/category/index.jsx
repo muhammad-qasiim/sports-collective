@@ -3,8 +3,8 @@ const Collection = ({ title, img }) => {
 
     return (
 
-        <div class="my-18 px-14 w-full md:w-1/2 lg:my-12 lg:px-14 lg:w-1/4">
-            <article class="overflow-hidden">
+        <div className="my-18 px-14 w-full md:w-1/2 lg:my-12 lg:px-14 lg:w-1/4">
+            <article className="overflow-hidden">
                 <section className="relative">
                     <img alt="Placeholder" className="block h-auto w-48 mx-auto" src={img} />
                 </section>

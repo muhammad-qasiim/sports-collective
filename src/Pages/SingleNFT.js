@@ -9,7 +9,7 @@ function Create() {
     <>
       <header className="nft-bg relative w-100 h-224">
         <div className="absolute w-96 h-96 rounded-full  border-4 border-gray-50 -bottom-12 left-2/4 -translate-x-2/4">
-          <img alt="Placeholder" class="h-full rounded-full w-full overflow-hidden" src="https://lh3.googleusercontent.com/yIm-M5-BpSDdTEIJRt5D6xphizhIdozXjqSITgK4phWq7MmAU3qE7Nw7POGCiPGyhtJ3ZFP8iJ29TFl-RLcGBWX5qI4-ZcnCPcsY4zI=s130" />
+          <img alt="Placeholder" className="h-full rounded-full w-full overflow-hidden" src="https://lh3.googleusercontent.com/yIm-M5-BpSDdTEIJRt5D6xphizhIdozXjqSITgK4phWq7MmAU3qE7Nw7POGCiPGyhtJ3ZFP8iJ29TFl-RLcGBWX5qI4-ZcnCPcsY4zI=s130" />
         </div>
       </header>
 

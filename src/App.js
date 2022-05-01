@@ -5,6 +5,7 @@ import Layout from "./components/Layout";
 import Home from "./Pages/Home";
 import Explore from "./Pages/Explore";
 import Create from "./Pages/Create";
+import Transfer from "./Pages/Transfer";
 import SingleNFT from "./Pages/SingleNFT";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="explore" element={<Explore />} />
           <Route path="create" element={<Create />} />
           <Route path="single_nft" element={<SingleNFT />} />
+          <Route path="transfer_nft" element={<Transfer />} />
         </Route>
       </Routes>
 

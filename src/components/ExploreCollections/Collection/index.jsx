@@ -4,12 +4,12 @@ const Collection = () => {
 
     return (
 
-        <div class="my-18 px-14 w-full md:w-1/2 lg:my-12 lg:px-14 lg:w-1/3">
-            <article class="overflow-hidden rounded-lg shadow-lg custom-shadow">
+        <div className="my-18 px-14 w-full md:w-1/2 lg:my-12 lg:px-14 lg:w-1/3">
+            <article className="overflow-hidden rounded-lg shadow-lg custom-shadow">
                 <section className="relative">
-                    <img alt="Placeholder" class="block h-auto w-full" src="https://picsum.photos/600/400/?random" />
+                    <img alt="Placeholder" className="block h-auto w-full" src="https://picsum.photos/600/400/?random" />
                     <div className="absolute h-64 w-64 rounded-full  border-4 border-gray-50 -bottom-7 left-2/4 -translate-x-2/4">
-                        <img alt="Placeholder" class="h-full rounded-full w-full overflow-hidden" src="https://picsum.photos/600/400/?random" />
+                        <img alt="Placeholder" className="h-full rounded-full w-full overflow-hidden" src="https://picsum.photos/600/400/?random" />
                     </div>
                 </section>
                 <footer className='text-center py-34 px-12'>
