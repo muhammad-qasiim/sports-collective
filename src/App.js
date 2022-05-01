@@ -5,6 +5,7 @@ import Layout from "./components/Layout";
 import Home from "./Pages/Home";
 import Explore from "./Pages/Explore";
 import Create from "./Pages/Create";
+import SingleNFT from "./Pages/SingleNFT";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="explore" element={<Explore />} />
           <Route path="create" element={<Create />} />
+          <Route path="single_nft" element={<SingleNFT />} />
         </Route>
       </Routes>
 

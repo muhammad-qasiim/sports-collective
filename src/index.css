@@ -59,3 +59,15 @@ input:focus-visible{
     transition: box-shadow 0.3s ease-in 0s;
     box-shadow: rgb(4 17 29 / 25%) 0px 0px 50px 0px;
   }
+
+  .nft-bg{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('https://picsum.photos/1200/200/?random');
+  }
+
+  .custom-shadow:hover{
+    transition: all 0.2s ease 0s;
+    box-shadow: rgb(4 17 29 / 25%) 0px 0px 8px 0px;
+  }
