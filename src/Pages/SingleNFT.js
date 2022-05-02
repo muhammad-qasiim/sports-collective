@@ -56,7 +56,7 @@ function Create() {
                                     {collection === 'Collected' && <BsCollection size="16" />}
                                     {collection === 'Created' && <AiOutlineFormatPainter size="20" />}
                                     {collection === 'Favourited' && <AiOutlineHeart size="18" />}
-                                    {collection === 'Hidden' && <AiOutlineEyeInvisible size="18" />}
+                                    {collection === 'Hidden' && <AiOutlineEyeInvisible size="20" />}
                                     {collection === 'Activity' && <GiBackwardTime size="18" />}
                                     {collection === 'Offers' && <AiOutlineUnorderedList size="16" />}
                                     {collection === 'Lisitngs' && <AiOutlineTag size="18" />}
