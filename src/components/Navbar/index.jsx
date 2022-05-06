@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Input from '../Common/Input';
-import { IoClose } from "react-icons/io5";
+import { AiOutlineHeart, AiOutlineUser, AiOutlineEye, AiOutlineSetting } from "react-icons/ai";
+import { BsGrid } from "react-icons/bs";
 import Sidebar from '../Sidebar';
 import { BiSearch } from "react-icons/bi";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -12,12 +13,12 @@ const Navbar = () => {
     const [toggleSidebar, setToggleSidebar] = useState(false);
 
     const [activeLink, setActiveLink] = useState('Trending');
+    const profileItems = [{ placeholder: 'Profile', icon: <AiOutlineUser className='text-17' /> }, { placeholder: 'Favourites', icon: <AiOutlineHeart /> }, { placeholder: 'Watchlist', icon: <AiOutlineEye className='text-17' /> }, { placeholder: 'My Collections', icon: <BsGrid /> }, { placeholder: 'Settings', icon: <AiOutlineSetting /> }]
     const Navigation = [{ placeholder: 'Explore', path: '/explore' }, { placeholder: 'Stats', path: '/' }, { placeholder: 'Resources', path: '/' }, { placeholder: 'Create', path: '/create' }]
 
     return (
         <>
-            
-           <Sidebar toggleSidebar={toggleSidebar} />
+
             <nav className="py-16 sticky top-0 bg-white shadow-xl" style={{ zIndex: '999' }}>
                 <div className="flex flex-wrap justify-between items-center mx-auto px-99">
                     <Link to="/"> <span className="self-center text-xl font-semibold whitespace-nowrap flex items-center gap-2">
@@ -38,22 +39,39 @@ const Navbar = () => {
                             {
                                 Navigation?.map(item => (
                                     <li onClick={() => setActiveLink(item?.placeholder)}>
-                                        <Link to={item?.path}>       <span className={`relative text-xl border-b-2 border-transparent cursor-pointer transition-all text-gray-500 hover:text-gray-800 ${activeLink === item?.placeholder && 'active text-gray-800 after:-bottom-6'}`}>
-                                            {item?.placeholder}
-                                        </span> </Link>
+                                        <Link to={item?.path}>
+                                            <span className={`relative text-xl border-b-2 border-transparent cursor-pointer transition-all text-gray-500 hover:text-gray-800 ${activeLink === item?.placeholder && 'active text-gray-800 after:-bottom-6'}`}>
+                                                {item?.placeholder}
+                                            </span>
+                                        </Link>
                                     </li>
                                 ))
                             }
-                            <li>
+                            <li className='options-parent relative'>
                                 <span className='relative text-3xl border-b-2 border-transparent cursor-pointer transition-all text-gray-500 hover:text-gray-800'>
                                     <CgProfile />
                                 </span>
+                                <section className='options-container bg-white shadow absolute'>
+                                    {
+                                        profileItems?.map(item => (
+                                            <>
+                                                <li className={`flex items-center gap-3 px-12 py-8 border-t cursor-pointer custom-shadow`}>
+                                                    <div className='text-16 text-gray-700'> {item?.icon} </div>
+                                                    <span className="text-gray-700 whitespace-nowrap">
+                                                        {item?.placeholder}
+                                                    </span>
+                                                </li>
+                                            </>
+                                        ))
+                                    }
+                                </section>
                             </li>
                             <li onClick={() => setToggleSidebar(!toggleSidebar)}>
                                 <span className='relative text-3xl border-b-2 border-transparent cursor-pointer transition-all text-gray-500 hover:text-gray-800'>
                                     <BiWallet />
                                 </span>
                             </li>
+                            <Sidebar toggleSidebar={toggleSidebar} />
                         </ul>
                     </div>
 

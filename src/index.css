@@ -37,6 +37,51 @@ input:focus-visible{
   border-top-right-radius: 4px;
 }
 
+.custom-shadow:hover{
+  transition: all 0.2s ease 0s;
+  box-shadow: rgb(4 17 29 / 25%) 0px 0px 8px 0px;
+}
+
+.sidebar-container{
+background-color: rgba(0, 0, 0, 0.25);
+}
+
+.sidebar-open{
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  width: 420px;
+  z-index: 90;
+  height: 100vh;
+  padding: 80px 20px 20px 20px;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(229, 232, 235);
+  overflow: auto;
+  filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 4px 4px);
+  transition: transform 0.3s ease 0s, opacity 0.3s ease 0s;
+  visibility: visible;
+  transform: translate3d(0px, 0px, 0px);
+  opacity: 1;
+}
+
+.sidebar-close{
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    width: 420px;
+    z-index: 90;
+    height: 100vh;
+    padding: 80px 20px 20px 20px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(229, 232, 235);
+    overflow: auto;
+    filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 4px 4px);
+    transition: transform 0.3s ease 0s, opacity 0.3s ease 0s;
+    visibility: visible;
+    transform: translate3d(100%, 0px, 0px);
+    opacity: 0;
+}
+
 .wallet-item:hover{
   transition: all 0.2s ease 0s;
   box-shadow: rgb(4 17 29 / 25%) 0px 0px 8px 0px;
@@ -67,47 +112,18 @@ input:focus-visible{
     background-image: url('https://picsum.photos/1200/200/?random');
   }
 
-  .custom-shadow:hover{
-    transition: all 0.2s ease 0s;
-    box-shadow: rgb(4 17 29 / 25%) 0px 0px 8px 0px;
+  .options-container{
+    top: 3.1rem;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
   }
 
-.sidebar-container{
-  background-color: rgba(0, 0, 0, 0.25);
-}
+  .options-container{
 
-  .sidebar-open{
-    position: fixed;
-    right: 0px;
-    bottom: 0px;
-    width: 420px;
-    z-index: 90;
-    height: 100vh;
-    padding: 80px 20px 20px 20px;
-    background: rgb(255, 255, 255);
-    border: 1px solid rgb(229, 232, 235);
-    overflow: auto;
-    filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 4px 4px);
-    transition: transform 0.3s ease 0s, opacity 0.3s ease 0s;
-    visibility: visible;
-    transform: translate3d(0px, 0px, 0px);
+  }
+
+  .options-parent:hover .options-container{
+    display: block;
     opacity: 1;
-  }
-
-  .sidebar-close{
-      position: fixed;
-      right: 0px;
-      bottom: 0px;
-      width: 420px;
-      z-index: 90;
-      height: 100vh;
-      padding: 80px 20px 20px 20px;
-      background: rgb(255, 255, 255);
-      border: 1px solid rgb(229, 232, 235);
-      overflow: auto;
-      filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 4px 4px);
-      transition: transform 0.3s ease 0s, opacity 0.3s ease 0s;
-      visibility: visible;
-      transform: translate3d(100%, 0px, 0px);
-      opacity: 0;
   }
