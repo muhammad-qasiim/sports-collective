@@ -1,7 +1,12 @@
-import { BsFileImage, BsAsterisk } from "react-icons/bs";
+import { useState } from 'react'
+import { BsFileImage, BsAsterisk, BsInfoCircle, BsFillUnlockFill } from "react-icons/bs";
+import { GoAlert } from "react-icons/go";
 import Input from '../Common/Input'
 
 const CreateItemContainer = () => {
+
+    const [toggleSwitch1, setToggleSwitch1] = useState(false)
+    const [toggleSwitch2, setToggleSwitch2] = useState(false)
 
     return (
         <>
@@ -37,6 +42,38 @@ const CreateItemContainer = () => {
                     <label className="text-gray-800 font-medium" htmlFor="#">Description</label> <br />
                     <p className='caption-text mt-6 mb-10'>The description will be included on the item's detail page underneath its image. Markdown syntax is supported.</p>
                     <textarea className='w-full py-18 text-14 px-16 h-176' placeholder='Provide a detailed description of your item.'></textarea>
+                </div>
+
+                <div className='my-28 border-t pt-28 mt-22'>
+                    <label className="text-gray-800 font-medium flex items-center gap-3"> <BsFillUnlockFill className="text-red-500" /> Unlockable Content</label>
+                    <div className="flex items-center justify-between gap-4">
+                        <p className='caption-text pl-28 mt-6 mb-0 flex items-center gap-2'>Include unlockable content that can only be revealed by the owner of the item. <BsInfoCircle className="cursor-pointer" /></p>
+                        <button
+                            onClick={() => setToggleSwitch1(!toggleSwitch1)}
+                            className={`sc-bXTejn dPeBEV ${toggleSwitch1 && "FeYJf"}`}
+                        >
+                            <div className="sc-gsNilK eThVUo"></div>
+                        </button>
+                    </div>
+                </div>
+
+                <div className='my-28 border-t border-b py-28 mt-22'>
+                    <label className="text-gray-800 font-medium flex items-center gap-3"> <GoAlert /> Explicit & Sensitive Content</label>
+                    <div className="flex items-center justify-between gap-4">
+                        <p className='caption-text pl-28 mt-6 mb-0 flex items-center gap-2'>Set this item as explicit and sensitive contentinfo <BsInfoCircle className="cursor-pointer" /></p>
+                        <button
+                            onClick={() => setToggleSwitch2(!toggleSwitch2)}
+                            className={`sc-bXTejn dPeBEV ${toggleSwitch2 && "FeYJf"}`}
+                        >
+                            <div className="sc-gsNilK eThVUo"></div>
+                        </button>
+                    </div>
+                </div>
+
+                <div className='mb-22'>
+                    <label className="text-gray-800 font-medium" htmlFor="#">Supply</label> <br />
+                    <p className='caption-text mt-6 mb-10 flex items-center gap-2'>The number of items that can be minted. No gas cost to you! <BsInfoCircle className="cursor-pointer" /></p>
+                    <Input className="w-full" value="1" />
                 </div>
 
                 <hr />
