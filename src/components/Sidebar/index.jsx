@@ -4,7 +4,7 @@ import { FaUserCircle } from "react-icons/fa";
 const Sidebar = ({ toggleSidebar }) => {
     return (
         <>
-            <main className={`fixed inset-0 z-10 transition-all ${toggleSidebar ? 'sidebar-container' : 'bg-transparent pointer-events-none'}`}>
+            <main className={`fixed bottom-0 right-0 left-0 top-16 z-10 transition-all ${toggleSidebar ? 'sidebar-container' : 'bg-transparent pointer-events-none'}`}>
                 <aside className={`${toggleSidebar ? 'sidebar-open' : 'sidebar-close'}`}>
                     <section>
                         <div className="py-12 border-b flex gap-3 items-center">
