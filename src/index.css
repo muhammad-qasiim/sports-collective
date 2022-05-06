@@ -43,7 +43,6 @@ input:focus-visible{
 }
 
 .sidebar-container{
-  margin-left: 0 !important;
   background-color: rgba(0, 0, 0, 0.25);
 }
 
@@ -74,7 +73,7 @@ input:focus-visible{
     width: 420px;
     z-index: 90;
     height: 100vh;
-    padding: 80px 20px 20px 20px;
+    padding: 2px 20px 20px 20px;
     background: rgb(255, 255, 255);
     border: 1px solid rgb(229, 232, 235);
     overflow: auto;
@@ -116,7 +115,7 @@ input:focus-visible{
   }
 
   .options-container{
-    top: 1.9rem;
+    top: 1.4rem;
     left: 50%;
     opacity: 0;
     transform: translateX(-50%);

@@ -51,11 +51,11 @@ const Navbar = () => {
                                 <span className='relative text-3xl border-b-2 border-transparent cursor-pointer transition-all text-gray-500 hover:text-gray-800'>
                                     <CgProfile />
                                 </span>
-                                <section className='options-container rounded-bl-3 rounded-br-3 overflow-hidden absolute'>
+                                <section className='options-container rounded-bl-5 rounded-br-5 overflow-hidden absolute'>
                                     {
                                         profileItems?.map(item => (
                                             <>
-                                                <li className={`flex items-center gap-3 pl-12 pr-16 py-8 ${item?.placeholder === '' ? 'bg-transparent' : 'bg-white custom-shadow border-b cursor-pointer border-l border-r'}`}>
+                                                <li className={`flex items-center gap-3 pl-22 pr-28 py-12 ${item?.placeholder === '' ? 'bg-transparent border-b' : 'bg-white wallet-item border-b cursor-pointer border-l border-r'}`}>
                                                     <div className='text-16 text-gray-700'> {item?.icon} </div>
                                                     <span className="text-gray-700 whitespace-nowrap">
                                                         {item?.placeholder}
