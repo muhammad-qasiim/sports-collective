@@ -26,7 +26,7 @@ const Header = () => {
                             <div className="relative my-18 px-14 w-full lg:my-12 lg:px-14">
                                 <article className="showcase-header cursor-pointer overflow-hidden rounded-lg shadow-lg">
                                     <section className="relative">
-                                        <img alt="Placeholder" className="block h-auto w-full" src="https://picsum.photos/600/300/?random" />
+                                        <img alt="Placeholder" className="block h-auto w-full" src="https://openseauserdata.com/files/beanz_launch_image_original_updated.png" />
                                     </section>
                                     <footer className='flex items-center justify-between py-22 px-12'>
                                         <section className='flex items-center gap-4'>
