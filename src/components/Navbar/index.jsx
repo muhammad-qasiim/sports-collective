@@ -40,7 +40,7 @@ const Navbar = () => {
                                 Navigation?.map(item => (
                                     <li onClick={() => setActiveLink(item?.placeholder)}>
                                         <Link to={item?.path}>
-                                            <span className={`relative text-xl border-b-2 border-transparent cursor-pointer transition-all text-gray-500 hover:text-gray-800 ${activeLink === item?.placeholder && 'active text-gray-800 after:-bottom-5'}`}>
+                                            <span className={`relative text-xl border-b-2 border-transparent cursor-pointer transition-all text-gray-500 hover:text-gray-800 ${activeLink === item?.placeholder && 'active text-gray-800 after:-bottom-6'}`}>
                                                 {item?.placeholder}
                                             </span>
                                         </Link>

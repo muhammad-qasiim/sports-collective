@@ -10,17 +10,19 @@
   box-sizing: border-box;
 }
 
-input[type="text"]{
+input[type="text"], textarea{
   border-radius: 10px;
   border: 1px solid rgb(229, 232, 235);
 }
 
-input[type="text"]::placeholder{
+input[type="text"]::placeholder, textarea::placeholder{
   color: #99a0a7 !important;
 }
 
 input:focus, 
-input:focus-visible{
+input:focus-visible,
+textarea:focus, 
+textarea:focus-visible{
   outline: none;
   border-width: 0.1px !important;
   border-color: rgb(222, 39, 39) !important ;
@@ -57,7 +59,7 @@ input:focus-visible{
 
 .sidebar-open{
   position: fixed;
-  top: 64px;
+  top: 70px;
   right: 0px;
   bottom: 0px;
   width: 420px;
@@ -76,7 +78,7 @@ input:focus-visible{
 
 .sidebar-close{
     position: fixed;
-    top: 64px;
+    top: 70px;
     right: 0px;
     bottom: 0px;
     width: 420px;
@@ -124,7 +126,7 @@ input:focus-visible{
   }
 
   .options-container{
-    top: 1.4rem;
+    top: 1.6rem;
     left: 50%;
     opacity: 0;
     transform: translateX(-50%);
@@ -133,4 +135,36 @@ input:focus-visible{
   .options-parent:hover .options-container{
     display: block;
     opacity: 1;
+  }
+
+  .createItemContainer input{
+    width: 100%;
+  }
+
+  .upload-modal-container{
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 12px;
+    padding: 4px;
+    cursor: pointer;
+    outline: 3px dashed rgb(204, 204, 204);
+    outline-offset: 6px;
+    border-radius: 10px;
+    width: 280px;
+    height: 220px;
+    transition: 0.2s ease-in;
+
+    display: grid;
+    place-items: center;
+  }
+
+  .upload-modal-container:hover{
+    background: #ececec;
+  }
+
+  .caption-text{
+    font-weight: 500;
+    font-size: 13px;
+    color: rgb(112, 122, 131);
   }
