@@ -55,7 +55,7 @@ const Navbar = () => {
                                     {
                                         profileItems?.map(item => (
                                             <>
-                                                <li className={`flex items-center gap-3 px-12 py-8 border-t cursor-pointer custom-shadow`}>
+                                                <li className={`flex items-center gap-3 pl-12 pr-16 py-8 border-t cursor-pointer custom-shadow`}>
                                                     <div className='text-16 text-gray-700'> {item?.icon} </div>
                                                     <span className="text-gray-700 whitespace-nowrap">
                                                         {item?.placeholder}
