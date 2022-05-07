@@ -7,7 +7,7 @@ const WalletConnectItem = () => {
     return (
         <>
 
-            <div className="text-sm text-gray-500  border-gray-200 mb-32 mx-8">
+            <div className="text-sm text-gray-500  border-gray-200 mb-32">
                 <ul className="rounded-8 card-shadow bg-gray-50 w-full mx-auto my-60 border">
                     {
                         Collections?.map(collection => (
