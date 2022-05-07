@@ -22,7 +22,7 @@ const Header = () => {
                         <p className="font-medium flex items-center gap-2 cursor-pointer text-red-600 mt-24 transition-all hover:text-red-700 z-50 relative"> <AiFillPlayCircle size="28" /> Learn more about beglobal</p>
                     </div>
                     <div className="w-full md:w-3/5 xl:w-full">
-                        <Link to="/single_nft">
+                        <Link to="/collection">
                             <div className="relative my-18 px-14 w-full lg:my-12 lg:px-14">
                                 <article className="showcase-header cursor-pointer overflow-hidden rounded-lg shadow-lg">
                                     <section className="relative">

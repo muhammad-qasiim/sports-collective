@@ -1,83 +1,64 @@
 
-import { useState } from 'react'
+import { Link } from 'react-router-dom';
+import { AiOutlineHeart, AiFillHeart, AiFillEye } from "react-icons/ai";
 import { GoVerified } from "react-icons/go";
-import { BsCollection } from "react-icons/bs";
-import { GiBackwardTime } from "react-icons/gi";
-import { AiOutlineTag, AiOutlineEyeInvisible, AiOutlineHeart, AiOutlineFormatPainter, AiOutlineUnorderedList } from "react-icons/ai";
+import { IoMdRefresh } from "react-icons/io";
 
-import SingleNFTCollection from '../components/SingleNFTCollection'
+import { BsThreeDotsVertical, BsFillShareFill } from "react-icons/bs";
+
+import { AiFillPlayCircle } from "react-icons/ai";
 
 function Create() {
-  const [activeLink, setActiveLink] = useState('Collected')
-  const Collections = ["Collected", "Created", "Favourited", "Hidden", "Activity", "Offers", "Lisitngs",]
 
   return (
     <>
-      <header className="nft-bg relative w-100 h-224">
-        <div className="absolute w-96 h-96 rounded-full  border-4 border-gray-50 -bottom-12 left-2/4 -translate-x-2/4">
-          <img alt="Placeholder" className="h-full rounded-full w-full overflow-hidden" src="https://lh3.googleusercontent.com/yIm-M5-BpSDdTEIJRt5D6xphizhIdozXjqSITgK4phWq7MmAU3qE7Nw7POGCiPGyhtJ3ZFP8iJ29TFl-RLcGBWX5qI4-ZcnCPcsY4zI=s130" />
-        </div>
-      </header>
-
-      <section className="container mx-auto px-24 lg:px-99 my-72 text-center">
-        <h3 className="text-28 font-semibold text-center mb-18 flex items-center gap-2 justify-center">Otherdeed for Otherside <GoVerified className="text-blue-500 text-22 mt-4" /> </h3>
-
-        <h5 className="flex items-center gap-2 justify-center mb-14">Created by <span className="text-red-500 cursor-pointer transition-all hover:text-red-700">OthersideMeta</span> <GoVerified className="text-blue-500 text-14" /> </h5>
-
-
-        <section className="flex justify-center items-center my-22">
-          <div className="custom-shadow text-center px-20 py-12 w-160 cursor-pointer rounded-tl-8 rounded-bl-8 border">
-            <h4 className="font-bold text-22">90.6K</h4>
-            <p className="text-gray-600">items</p>
-          </div>
-          <div className="custom-shadow text-center px-20 py-12 w-160 cursor-pointer border">
-            <h4 className="font-bold text-22">30.1K</h4>
-            <p className="text-gray-600">owners</p>
-          </div>
-          <div className="custom-shadow text-center px-20 py-12 w-160 cursor-pointer border">
-            <h4 className="font-bold text-22">7.09</h4>
-            <p className="text-gray-600">floor price</p>
-          </div>
-          <div className="custom-shadow text-center px-20 py-12 w-160 cursor-pointer rounded-tr-8 rounded-br-8 border">
-            <h4 className="font-bold text-22">70.3K</h4>
-            <p className="text-gray-600">volume traded</p>
-          </div>
-        </section>
-
-        <p className="text-18 w-full md:w-2/4 mx-auto font-light" style={{color: '#707a83'}}>Otherdeed is the key to claiming land in Otherside. Each have a unique blend of environment and sediment — some with resources, some home to powerful artifacts. And on a very few, a Koda roams.</p>
-      </section>
-
-      <div className="text-sm font-medium text-center text-gray-500 border-b border-gray-200 mb-32 mx-8 overflow-x-scroll">
-                    <ul className="flex items-center 2xl:justify-center gap-8 mb-4 whitespace-nowrap">
-                        {
-                            Collections?.map(collection => (
-                                <li onClick={() => setActiveLink(collection)}>
-                                    <span className={`flex items-center gap-2 relative text-lg border-b-2 border-transparent cursor-pointer transition-all text-gray-500 hover:text-gray-800 ${activeLink === collection && 'active after:-bottom-2 text-gray-800'}`}>
-                                    {collection === 'Collected' && <BsCollection size="16" />}
-                                    {collection === 'Created' && <AiOutlineFormatPainter size="20" />}
-                                    {collection === 'Favourited' && <AiOutlineHeart size="18" />}
-                                    {collection === 'Hidden' && <AiOutlineEyeInvisible size="20" />}
-                                    {collection === 'Activity' && <GiBackwardTime size="18" />}
-                                    {collection === 'Offers' && <AiOutlineUnorderedList size="16" />}
-                                    {collection === 'Lisitngs' && <AiOutlineTag size="18" />}
-                                    {collection}
-                                    <span className='text-14 mt-1'>0</span>
-                                    </span>
-                                </li>
-                            ))
-                        }
-                    </ul>
+      <section className="container mx-auto px-24 lg:px-99 pt-32 pb-99 mb-99 w-3/4">
+        <main>
+          <section className="flex flex-col xl:flex-row items-start gap-6">
+            <div className="w-full md:w-3/5 xl:w-full">
+              <Link to="/collection">
+                <div className="relative my-18 px-14 w-full lg:my-12 lg:px-14">
+                  <article className="border cursor-pointer overflow-hidden rounded-lg shadow-lg">
+                    <div className='px-24 py-14 flex items-center gap-4 justify-between'>
+                      <img class="w-3" src="https://openseauserdata.com/files/6f8e2979d428180222796ff4a33ab929.svg" alt="" />
+                      <span className="text-14 text-gray-600 flex items-center gap-2"> <AiOutlineHeart className="transition-all cursor-pointer hover:text-red-600" size="22" /> 14</span>
+                    </div>
+                    <section className="relative">
+                      <img alt="Placeholder" className="block h-auto w-full" src="https://lh3.googleusercontent.com/LwWCE4G49qFjE-HBdMNtMQVDYK6MRbv3rGDJt59o1YAj2DXfxJyCu1KIsK76D_nvcnH9ISAw3OAP2iPT571UVs4CERn_LaPTn1D0QQ=w600" />
+                    </section>
+                  </article>
                 </div>
-
-      <section className="container mx-auto px-24 lg:px-99 my-72 text-center">
-      <div className="flex flex-wrap -mx-1 lg:-mx-4">
-                {
-                    Collections?.map(collection => (
-                        <SingleNFTCollection />
-                    ))
-                }
+              </Link>
             </div>
-            </section>
+            <div className="w-full mt-8 mb-32 xl:mb-10">
+              <section className='flex items-center gap-4 justify-between'>
+                <span className='text-red-500 text-18 flex items-center gap-3'>BEANZ Official <GoVerified className="text-blue-500 text-16" /></span>
+                <section className="flex justify-center items-center my-8">
+                  <div className="grid place-items-center custom-shadow text-gray-500 text-center px-20 h-40 w-56 cursor-pointer rounded-tl-8 rounded-bl-8 border">
+                    <IoMdRefresh size="18" />
+                  </div>
+                  <div className="grid place-items-center custom-shadow text-gray-500 text-center px-20 h-40 w-56 cursor-pointer border">
+                    <BsFillShareFill size="14" />
+                  </div>
+                  <div className="grid place-items-center custom-shadow text-gray-500 text-center px-20 h-40 w-56 cursor-pointer rounded-tr-8 rounded-br-8 border">
+                    <BsThreeDotsVertical />
+                  </div>
+                </section>
+              </section>
+              <h3 className="text-36 font-semibold mb-2 text-black leading-58">Bean #2409</h3>
+              <section className='flex items-center gap-6'>
+                <p className="flex items-center gap-2 text-gray-500 "> Owned by  <span className='text-red-500 transition-all hover:text-red-600 cursor-pointer'>BALEAS</span></p>
+                <p className="flex items-center gap-2 cursor-pointer text-gray-500 transition-all hover:text-gray-900"> <AiFillEye className="text-gray-450" size="26" /> 7.7K views</p>
+                <p className="flex items-center gap-2 cursor-pointer text-gray-500 transition-all hover:text-gray-900"> <AiFillHeart className="text-gray-450" size="24" /> 334 favorites</p>
+              </section>
+              <p className="mt-4 text-34 text-gray-700 leading-48 pr-0 lg:pr-112">beglobal is the world's first and largest NFT marketplace</p>
+              <div className="flex items-center gap-4 mt-38">
+                <Link to="/explore">  <button className="bg-red-500 text-white px-32 py-10 rounded-5 transition-all hover:bg-red-600 relative top-0 hover:top-px" >Place Bid</button> </Link>
+              </div>
+            </div>
+          </section>
+        </main>
+      </section>
     </>
   );
 }
