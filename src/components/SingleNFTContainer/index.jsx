@@ -1,5 +1,6 @@
 
 import MyCollection from './MyCollection'
+import NFTDetail from './NFTDetail'
 import { FaWallet } from "react-icons/fa";
 import { GoVerified } from "react-icons/go";
 import { IoMdRefresh } from "react-icons/io";
@@ -47,6 +48,7 @@ const SingleNFTContainer = () => {
                                     </section>
                                 </article>
                             </div>
+                            <NFTDetail />
                         </div>
                         <div className="w-full mt-8 mb-32 xl:mb-10">
 
