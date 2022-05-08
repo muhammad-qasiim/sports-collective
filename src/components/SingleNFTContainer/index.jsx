@@ -11,7 +11,7 @@ const SingleNFTContainer = () => {
 
     return (
         <>
-            <section className="container mx-auto px-24 lg:px-99 pt-32 pb-99 mb-99 w-3/4">
+            <section className="container mx-auto px-24 lg:px-99 pt-32 pb-99 mb-99 w-full lg:w-3/4">
                 <main>
                     <section className="flex flex-col xl:flex-row items-start gap-0 xl:gap-6">
                         <div className="w-full xl:w-4/5">
@@ -70,7 +70,7 @@ const SingleNFTContainer = () => {
                             </section>
                             {/*  */}
 
-                            <section className='flex items-center gap-6 ml-4'>
+                            <section className='flex items-center flex-wrap gap-6 ml-4'>
                                 <p className="flex items-center gap-2 font-light text-gray-500 "> Owned by  <span className='text-red-500 transition-all hover:text-red-600 cursor-pointer'>BALEAS</span></p>
                                 <p className="flex items-center gap-2 font-light cursor-pointer text-gray-500 transition-all hover:text-gray-900"> <AiFillEye className="text-gray-450" size="26" /> 7.7K views</p>
                                 <p className="flex items-center gap-2 font-light cursor-pointer text-gray-500 transition-all hover:text-gray-900"> <AiFillHeart className="text-gray-450" size="24" /> 334 favorites</p>
