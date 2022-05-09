@@ -18,8 +18,7 @@ const ConnectWalletContainer = () => {
                     <img className="rounded-20 border-8" src="https://picsum.photos/400/300/?random" alt="" />
                 </div>
 
-                <div className="flex justify-center">
-
+                <div className="block md:flex justify-center">
                     <Input label="Address" placeholder="eg. gdks4534lkfjs" />
                 </div>
 
