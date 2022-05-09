@@ -1,6 +1,7 @@
 
 import MyCollection from './MyCollection'
 import NFTDetail from './NFTDetail'
+import NFTListings from './NFTListings'
 import { FaWallet } from "react-icons/fa";
 import { GoVerified } from "react-icons/go";
 import { IoMdRefresh } from "react-icons/io";
@@ -92,6 +93,8 @@ const SingleNFTContainer = () => {
 
                                 </div>
                             </section>
+                            <NFTListings title="Listings" />
+                            <NFTListings title="Offers" />
                         </div>
                     </section>
                 </main>

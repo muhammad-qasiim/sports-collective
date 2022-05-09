@@ -8,6 +8,7 @@ import { MdKeyboardArrowUp } from "react-icons/md";
 const NFTDetail = () => {
     return (
         <>
+
             <section className='border rounded-8 my-22 pt-18'>
 
                 <div className='flex items-center gap-4 pb-18 border-b px-24 cursor-pointer'>
