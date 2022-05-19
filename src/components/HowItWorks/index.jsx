@@ -2,7 +2,7 @@
 const HowItWorks = () => {
 
     return (
-        <section className="theme-gradient">
+        <section id="how-it-works" className="theme-gradient">
             <main className="container mx-auto px-24 lg:px-99 py-99">
                 <section className="flex flex-col xl:flex-row items-center gap-6">
                     <div className="w-full mb-32 xl:mb-10">

@@ -1,12 +1,14 @@
 
 import ExploreCollections from "../components/ExploreCollections";
 
-function Explore() {
+function Index() {
   return (
     <>
-      <ExploreCollections />
+      <section className="bg-gray-50">
+        <ExploreCollections />
+      </section>
     </>
   );
 }
 
-export default Explore;
+export default Index;
