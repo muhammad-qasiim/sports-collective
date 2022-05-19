@@ -35,7 +35,7 @@ textarea:focus-visible{
 
 .active::after{
   transition: background-color 0.4s ease 0s;
-  background-color: rgb(222, 39, 39);
+  background-color: #8251D4;
   bottom: 0%;
   content: "";
   display: block;
@@ -102,7 +102,6 @@ textarea:focus-visible{
 }
 
 .showcase{
-  background-image: url(/public/assets/bg.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -231,3 +230,10 @@ textarea:focus-visible{
   box-shadow: rgb(34 41 57 / 10%) 0px 2px 4px 0px;
 }
 /* swtich end */
+
+
+
+
+.theme-gradient{
+  background: linear-gradient(145deg, rgba(255,165,0,1) 15%, rgba(130,81,212,1) 100%);
+}
