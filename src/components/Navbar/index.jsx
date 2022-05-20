@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { AiOutlineAlignRight } from "react-icons/ai";
+import { IoCloseOutline } from "react-icons/io5";
 import { Link as ScrollLink } from 'react-scroll'
 
 const Navbar = () => {
@@ -32,11 +34,14 @@ const Navbar = () => {
                                 </ul>
                             </div>
                         </main>
-                        <section className="flex items-center gap-4">
+                        <section className="hidden xl:flex items-center gap-4">
                             <Link to="/sign-up"> <span onClick={() => setActiveLink('CREATE ACCOUNT')} className={`relative transition-all text-secondary hover:text-primary border-b-2 border-transparent cursor-pointer text-sm font-semibold ${activeLink === 'CREATE ACCOUNT' ? 'active text-primary after:-bottom-8' : 'text-secondary hover:text-primary'}`}>
                                 CREATE ACCOUNT
                             </span> </Link>
                             <Link to="/sign-in"> <button onClick={() => setActiveLink('')} className="bg-primary text-white font-bold px-32 py-8 rounded-5 transition-all hover:bg-purple-700 relative top-0 hover:top-px" >LOGIN</button> </Link>
+                        </section>
+                        <section onClick={() => setToggleSidebar(!toggleSidebar)} className='block xl:hidden cursor-pointer text-24 text-secondary'>
+                            {toggleSidebar ? <IoCloseOutline className='text-26' /> : <AiOutlineAlignRight /> }
                         </section>
                     </section>
                 </main>
