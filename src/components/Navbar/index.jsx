@@ -7,7 +7,7 @@ import { Link as ScrollLink } from 'react-scroll'
 const Navbar = () => {
     const [toggleSidebar, setToggleSidebar] = useState(false);
 
-    const [activeLink, setActiveLink] = useState('');
+    const [activeLink, setActiveLink] = useState(''); 
     const Navigation = [{ placeholder: 'EXPLORE', path: '/EXPLORE' }, { placeholder: 'TRENDING', path: '/' }, { placeholder: 'HOW IT WORKS?', path: '/' }, { placeholder: 'ABOUT', path: '/' }, { placeholder: 'CONTACT', path: '/CONTACT' }]
 
     return (
