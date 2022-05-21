@@ -231,6 +231,13 @@ textarea:focus-visible{
 }
 /* swtich end */
 
+.open-sidebar{
+  left: 0;
+}
+
+.close-sidebar{
+  left: -320px;
+}
 
 .react-select input{
   background-color: transparent !important;
@@ -286,4 +293,30 @@ z-index: 2000;
 display: grid;
 place-items: center;
 background-color: rgb(27 27 27 / 75%) !important;
+}
+
+.circle {
+  background: #8251D4;
+  width: 30px;
+  height: 30px;
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  overflow: hidden;
+  animation: morph 3s linear infinite;
+}
+
+.circle img {
+  width: 100%;
+}
+
+
+@keyframes morph{
+  0%, 100% {
+  border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+  }
+  34% {
+    border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+  }
+  67% {
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+  }
 }
