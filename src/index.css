@@ -240,7 +240,6 @@ textarea:focus-visible{
   margin-bottom: 0 !important;
 }
 
-
 .theme-gradient{
   background: linear-gradient(145deg, rgba(255,165,0,1) 15%, rgba(130,81,212,1) 100%);
 }
