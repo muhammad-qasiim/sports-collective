@@ -7,7 +7,9 @@ function Index() {
     <>
       <section className="bg-gray-50">
         <main className="flex items-start gap-12">
-            <Filter />
+          <div className="hidden lg:block">
+              <Filter />
+          </div>
           <div className="w-full">
             <ExploreCollections />
           </div>
