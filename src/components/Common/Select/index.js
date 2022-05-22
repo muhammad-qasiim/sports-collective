@@ -27,7 +27,7 @@ const Index = () => {
       ...provided,
       border: '1px solid black',
       boxShadow: 'none',
-      backgroundColor: "#FBFBFB",
+      backgroundColor: "#FFF",
       border: "1px solid #E7E7E7 !important",
       height: '2.5rem',
       borderRadius: '0.3125rem',

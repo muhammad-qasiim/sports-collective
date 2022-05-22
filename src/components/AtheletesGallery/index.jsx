@@ -19,6 +19,7 @@ const AtheletesGallery = ({ children }) => {
                                     <h6 className="text-xl leading-relaxed text-secondary cursor-pointer font-semibold transition-all hover:text-gray-900"> {athelete} </h6>
                                     <h6 className="text-lg leading-relaxed text-secondary cursor-pointer font-semibold transition-all hover:text-gray-900"> $60, 000 </h6>
                                 </section>
+                                <h6 className="text-lg flex justify-end leading-relaxed text-gray-500 cursor-pointer transition-all"> #098345 </h6>
                                 <section className='flex items-center justify-between gap-5 mt-12 mb-6'>
                                     <button className="bg-primary text-white px-32 py-8 rounded-5 transition-all hover:bg-purple-700 relative top-0 hover:top-px" >Buy now</button>
                                     <div className='group relative text-28 text-gray-600'>

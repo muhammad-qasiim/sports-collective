@@ -24,7 +24,7 @@ const Accordion = ({ title, children }) => {
                 <section className={`${toggle ? 'opacity-1 block' : 'opacity-0 hidden'} text-gray-200 bg-blueish py-28`}>
                     <div className="px-26 lg:px-42 ">
                         {title === 'STATUS' ? (
-                            <div className="grid grid-cols-2">
+                            <div className="grid grid-cols-2 accordion-container">
                                 <div className="mb-8">
                                     <input type="checkbox" id="vehicle1" name="vehicle1" value="Buy now" />
                                     <label for="vehicle1"> Buy now</label>

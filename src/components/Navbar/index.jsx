@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Sidebar from '../Common/Sidebar'
 import { AiOutlineAlignRight } from "react-icons/ai";
 import { IoCloseOutline } from "react-icons/io5";
 import { Link as ScrollLink } from 'react-scroll'
@@ -8,13 +9,13 @@ const Navbar = () => {
     const [toggleSidebar, setToggleSidebar] = useState(false);
 
     const [activeLink, setActiveLink] = useState(''); 
-    const Navigation = [{ placeholder: 'EXPLORE', path: '/EXPLORE' }, { placeholder: 'TRENDING', path: '/' }, { placeholder: 'HOW IT WORKS?', path: '/' }, { placeholder: 'ABOUT', path: '/' }, { placeholder: 'CONTACT', path: '/CONTACT' }]
+    const Navigation = [{ placeholder: 'EXPLORE', path: '/EXPLORE' }, { placeholder: 'TRENDING', path: '' }, { placeholder: 'HOW IT WORKS?', path: '' }, { placeholder: 'ABOUT', path: '' }, { placeholder: 'CONTACT', path: '/CONTACT' }]
 
     return (
         <>
-            <nav className="sticky top-0 z-20 bg-white shadow-xl py-20">
+            <nav className="sticky top-0 z-20 bg-white shadow-xl h-71">
                 <main className="container mx-auto px-24 lg:px-99">
-                    <section className="flex justify-between flex-wrap items-center gap-12 px-10">
+                    <section className="flex h-71 justify-between flex-wrap items-center gap-12 px-10">
                         <main className='flex items-center gap-8'>
                             <Link to="/"> <img onClick={() => setActiveLink('')} className="w-80 cursor-pointer" src="/assets/logo.svg" alt="" /> </Link>
                             <div className="hidden justify-between items-center w-full xl:flex xl:w-auto xl:order-2" id="mobile-menu-3">
@@ -43,6 +44,7 @@ const Navbar = () => {
                         <section onClick={() => setToggleSidebar(!toggleSidebar)} className='block xl:hidden cursor-pointer text-24 text-secondary'>
                             {toggleSidebar ? <IoCloseOutline className='text-26' /> : <AiOutlineAlignRight /> }
                         </section>
+                        <Sidebar toggleSidebar={toggleSidebar} setToggleSidebar={setToggleSidebar} />
                     </section>
                 </main>
             </nav>
