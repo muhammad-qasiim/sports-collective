@@ -17,7 +17,7 @@ const Header = () => {
 
     return (
         <>
-            <div>
+            <div className="w-full">
                 <Slider {...settings}>
                     {
                         headerItems?.map(item => (

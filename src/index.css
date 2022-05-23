@@ -10,6 +10,11 @@
   box-sizing: border-box;
 }
 
+body{
+  width: 100%;
+  overflow-x: hidden;
+}
+
 input[type="text"], textarea{
   border-radius: 10px;
   border: 1px solid rgb(229, 232, 235);
@@ -436,3 +441,11 @@ ul.pagination a.page-link:hover {
     bottom: 80px !important;
   }
 }
+
+.slick-initialized {
+  overflow: hidden;
+  }
+
+/* body *{
+  border: 1px solid red;
+} */
