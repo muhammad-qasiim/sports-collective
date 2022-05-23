@@ -64,7 +64,6 @@ textarea:focus-visible{
   bottom: 0px;
   width: 420px;
   z-index: 90;
-  height: 100vh;
   padding: 2px 20px 20px 20px;
   background: rgb(255, 255, 255);
   border: 1px solid rgb(229, 232, 235);
@@ -76,6 +75,12 @@ textarea:focus-visible{
   opacity: 1;
 }
 
+@media (max-width: 480px){
+.sidebar-open {
+    width: 100%;
+}
+}
+
 .sidebar-close{
     position: fixed;
     top: 70px;
@@ -83,7 +88,6 @@ textarea:focus-visible{
     bottom: 0px;
     width: 420px;
     z-index: 90;
-    height: 100vh;
     padding: 2px 20px 20px 20px;
     background: rgb(255, 255, 255);
     border: 1px solid rgb(229, 232, 235);
@@ -378,9 +382,7 @@ ul.pagination a.page-link:hover {
 }
 
 .gGngoX {
-  height: 200px;
   position: relative;
-  bottom: 40px;
   width: 100%;
   z-index: 120;
   flex-shrink: 0;
@@ -397,4 +399,40 @@ ul.pagination a.page-link:hover {
   position: relative;
   top: 1px;
   margin-right: 2px;
+}
+
+/* slick slider */
+
+.slick-dots{
+  width: 100%;
+  bottom: 40px !important;
+}
+
+.slick-dots li,
+.slick-dots li button,
+.slick-dots li button:before {
+  height: 14px !important;
+  width: 14px !important;
+}
+
+.slick-dots li.slick-active button:before{
+  background-color: #FFF;
+}
+
+.slick-dots li{
+  margin: 0 6px !important;
+}
+
+.slick-dots li button:before{
+  content: '' !important;
+  opacity: 1 !important;
+  transform: rotate(45deg);
+  border: 3px solid #FFF;
+}
+
+@media(min-width: 1024px){
+  .slick-dots{
+    width: 50% !important;
+    bottom: 80px !important;
+  }
 }

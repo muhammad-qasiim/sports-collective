@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="321" height="269" viewBox="0 0 321 269">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#8600ff"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_6" data-name="Rectangle 6" width="321" height="269" transform="translate(1596.459 807.8)" stroke="#707070" stroke-width="1" fill="url(#linear-gradient)"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_1" data-name="Mask Group 1" transform="translate(-1596.459 -807.8)" opacity="0.5" clip-path="url(#clip-path)">
+    <g id="Icon_ionic-ios-basketball" data-name="Icon ionic-ios-basketball" transform="translate(1637.751 807.8)">
+      <path id="Path_2" data-name="Path 2" d="M150.648,158.348c12.493-10.309,24.724-21.316,36.168-32.848l5.329-5.329c-2.446-2.534-4.892-5.067-7.251-7.426A497.082,497.082,0,0,0,34.805,9.57,180.955,180.955,0,0,0,3.53,87.846a220.49,220.49,0,0,1,80.548,21.4A223.166,223.166,0,0,1,150.648,158.348Z" transform="translate(-6.675 71.197)" fill="url(#linear-gradient)"/>
+      <path id="Path_3" data-name="Path 3" d="M75.787,123.666c.437.437.961.961,1.485,1.4a499.567,499.567,0,0,0,46.739-85.091A180.955,180.955,0,0,0,18.3,3.368a200.34,200.34,0,0,0,14.59,56.523A198.643,198.643,0,0,0,75.787,123.666Z" transform="translate(167.168 -3.368)" fill="url(#linear-gradient)"/>
+      <path id="Path_4" data-name="Path 4" d="M69.506,118.691a196.316,196.316,0,0,0,56.786,14.59A181.365,181.365,0,0,0,71.952,7.566,518.9,518.9,0,0,1,24.427,92.132,198.568,198.568,0,0,0,69.506,118.691Z" transform="translate(237.136 44.59)" fill="url(#linear-gradient)"/>
+      <path id="Path_5" data-name="Path 5" d="M130.837,75.867A200.443,200.443,0,0,0,67.15,32.885a199.728,199.728,0,0,0-63.687-15.2c0,1.31-.087,2.621-.087,3.844a180.457,180.457,0,0,0,39.138,112.61,498.071,498.071,0,0,0,92.08-54.514C133.283,78.4,132.06,77.09,130.837,75.867Z" transform="translate(-3.375 160.186)" fill="url(#linear-gradient)"/>
+      <path id="Path_6" data-name="Path 6" d="M165.274,173.452c8.824-9.872,17.21-20.181,25.16-30.664A222.359,222.359,0,0,1,122.117,3.445,181.16,181.16,0,0,0,7.235,61.279a519,519,0,0,1,83.518,48.137A535.943,535.943,0,0,1,165.274,173.452Z" transform="translate(40.727 -2.484)" fill="url(#linear-gradient)"/>
+      <path id="Path_7" data-name="Path 7" d="M21.192,48.442a520.32,520.32,0,0,1,83.256,127.9A181.387,181.387,0,0,0,162.282,61.284,221.771,221.771,0,0,1,48.012,15.855C39.626,26.951,30.54,37.958,21.192,48.442Z" transform="translate(200.184 139.3)" fill="url(#linear-gradient)"/>
+      <path id="Path_8" data-name="Path 8" d="M16.545,58.6A221.392,221.392,0,0,1,61.1,177.066a180.175,180.175,0,0,0,78.189-31.276A496.512,496.512,0,0,0,58.741,19.814,522.208,522.208,0,0,1,16.545,58.6Z" transform="translate(147.085 184.526)" fill="url(#linear-gradient)"/>
+      <path id="Path_9" data-name="Path 9" d="M98.655,24.068A522.411,522.411,0,0,1,7.8,78.932,181.053,181.053,0,0,0,134.56,130.475c1.31,0,2.621,0,3.931-.087a199.727,199.727,0,0,0-15.2-63.687A197,197,0,0,0,98.655,24.068Z" transform="translate(47.153 233.127)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>
