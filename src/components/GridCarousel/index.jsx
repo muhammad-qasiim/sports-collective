@@ -13,7 +13,7 @@ const GridCarousel = ({ theme, children }) => {
         slidesToScroll: 3
     }
 
-    const CarouselCards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    const CarouselCards = [1, 2, 3, 4, 5, 6, 7]
 
     return (
         <section className="container overflow-x-hidden mx-auto px-24 lg:px-99 mt-62 lg:mt-99">
