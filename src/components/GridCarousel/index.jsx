@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const GridCarousel = ({ children }) => {
+const GridCarousel = ({ theme, children }) => {
 
     const settings = {
         dots: true,
@@ -13,21 +13,22 @@ const GridCarousel = ({ children }) => {
         slidesToScroll: 3
     }
 
-    const CarouselCards = ["How to Easily Setup a MetaMask Wallet", "How to Fund MetaMask with ETH", "How to Find an NFT You Love"]
+    const CarouselCards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
     return (
-        <section className="container mx-auto px-24 lg:px-99 my-99">
+        <section className="container overflow-x-hidden mx-auto px-24 lg:px-99 mt-62 lg:mt-99">
+
             <main className='flex flex-col 2xl:flex-row items-start 2xl:items-center gap-8'>
-                <div className='w-full 2xl:w-3/12 px-16 2xl:px-0'>
+
+                <div className='w-full mb-18 2xl:mb-99 2xl:w-3/12 px-16 2xl:px-0'>
                     {children}
                 </div>
 
-                <section className='w-full'>
+                <section className={`slider-listing w-full 2xl:w-3/4 ${theme}`}>
                     <Slider {...settings}>
                         {
                             CarouselCards?.map(item => (
                                 <section className='w-full'>
-
                                     <CarouselCard />
                                 </section>
 

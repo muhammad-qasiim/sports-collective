@@ -10,13 +10,13 @@ function Index() {
 
       <Header />
 
-      <GridCarousel >
-        <h3 className="text-30 font-bold text-tertiary mb-18 pr-0 lg:pr-22">OUR MOST POPULAR DROPS</h3>
+      <GridCarousel theme={'theme-yellow'}>
+        <h3 className="text-22 md:text-30 font-bold text-tertiary mb-18 pr-0 lg:pr-22">OUR MOST POPULAR DROPS</h3>
         <Link to="/explore"> <button className="bg-tertiary text-white font-bold px-32 py-10 rounded-5 transition-all hover:bg-yellow relative top-0 hover:top-px" >DISCOVER</button> </Link>
       </GridCarousel>
 
-      <GridCarousel >
-        <h3 className="text-30 font-bold text-primary mb-18 pr-0 lg:pr-22">CHECK OUT NEW ITEMS</h3>
+      <GridCarousel theme={'theme-purple'}>
+        <h3 className="text-22 md:text-30 font-bold text-primary mb-18 pr-0 lg:pr-22">CHECK OUT NEW ITEMS</h3>
         <Link to="/explore"> <button className="bg-primary text-white font-bold px-32 py-10 rounded-5 transition-all hover:bg-purple-600 relative top-0 hover:top-px" >DISCOVER</button> </Link>
       </GridCarousel>
 
